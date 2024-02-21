@@ -1,26 +1,7 @@
-
 package problems;
 
-import com.sun.source.tree.Tree;
-
-import java.util.*;
-
 class PathSum {
-
-
-    public static void main(String[] args) {
-        List<Integer> list = List.of(1,2,3,4,5);
-        PathSum pathsum = new PathSum();
-        TreeNode treeNode = pathsum.buildTree(list);
-
-        List<Integer> result = new ArrayList<>();
-        pathsum.preorderTraversal(treeNode, result);
-
-        System.out.println(result);
-
-
-    }
-    public static class TreeNode {
+    public class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -32,38 +13,40 @@ class PathSum {
             this.right = right;
         }
     }
-    public TreeNode buildTree(List<Integer> values){
-        int n = values.size();
-        Queue<TreeNode> queue = new LinkedList<>();
-        TreeNode root = new TreeNode(values.get(0));
-        queue.add(root);
-        int i=1;
-        while(i<n && !queue.isEmpty()){
-            TreeNode currentNode  = queue.poll();
-            currentNode.left = new TreeNode(values.get(i));
-            queue.add(currentNode.left);
-            i=i+1;
-            if(i>=n){
-                break;
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+
+        return this.helper(root, targetSum);
+    }
+    public boolean helper(TreeNode root, int targetSum) {
+
+        if(root!=null ){
+
+            if(root.left==null && root.right==null)
+            {
+                if(targetSum==0){
+                    return true;
+                }
+                else{
+                    return false;
+                }
             }
-            currentNode.right = new TreeNode(values.get(i));
-            queue.add(currentNode.right);
 
-            i=i+1;
+            targetSum = targetSum - root.val;
+            boolean leftResult;
+            leftResult = helper(root.left, targetSum);
+            boolean rightResult;
+
+            rightResult = helper(root.right, targetSum);
+            if(leftResult || rightResult){
+                return true;
+            }
+            else{
+                return false;
+            }
 
         }
 
-        return root;
+        return false;
     }
 
-
-    public void preorderTraversal(TreeNode root, List<Integer> values) {
-
-        if(root!=null) {
-
-            preorderTraversal(root.left, values);
-            preorderTraversal(root.right, values);
-            values.add(root.val);
-        }
-    }
 }

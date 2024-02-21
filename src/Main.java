@@ -1,10 +1,21 @@
-import problems.CollectionsClass;
-import problems.MyHashMap;
-import problems.MyLinkedList;
-import problems.PlusOne;
+import problems.*;
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        LinkedList llist = new LinkedList();
+        ListNode head = new ListNode(1);
+        llist.add(head);
+        int i=0;
+        while(i<5){
+            llist.add(i);
+            llist.add(i);
+        }
+        RemoveDuplicateLList removedllist = new RemoveDuplicateLList();
+        removedllist.deleteDuplicates(head);
+
         MyHashMap hashmap = new MyHashMap();
         hashmap.myHashMapFn();
 

@@ -5,19 +5,32 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList llist = new LinkedList();
-        ListNode head = new ListNode(1);
-        llist.add(head);
-        int i=0;
-        while(i<5){
-            llist.add(i);
-            llist.add(i);
-        }
-        RemoveDuplicateLList removedllist = new RemoveDuplicateLList();
-        removedllist.deleteDuplicates(head);
+        LListCycle llistcycle = new LListCycle();
+        llistcycle.solution();
 
-        MyHashMap hashmap = new MyHashMap();
-        hashmap.myHashMapFn();
+//        LongestSubsequenceWithLimitedSum obj = new LongestSubsequenceWithLimitedSum();
+//        obj.solution();
+//          ThreeSum3 threeSum = new ThreeSum3();
+//          threeSum.ThreeSum_3();
+
+//        TwoSum2 twoSum2 = new TwoSum2();
+//        twoSum2.twoSum_2();
+//        //TwoSum1 twosum1 = new TwoSum1();
+       // twosum1.twosum_1();
+        //twosum1.twoSum_hashMap();
+//        LinkedList llist = new LinkedList();
+//        ListNode head = new ListNode(1);
+//        llist.add(head);
+//        int i=0;
+//        while(i<5){
+//            llist.add(i);
+//            llist.add(i);
+//        }
+//        RemoveDuplicateLList removedllist = new RemoveDuplicateLList();
+//        removedllist.deleteDuplicates(head);
+//
+//        MyHashMap hashmap = new MyHashMap();
+//        hashmap.myHashMapFn();
 
         //MyLinkedList myllist = new MyLinkedList();
         //myllist.studentsLinkedList();

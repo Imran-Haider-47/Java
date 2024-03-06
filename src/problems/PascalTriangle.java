@@ -1,5 +1,8 @@
 package problems;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PascalTriangle {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> list = new ArrayList<>();

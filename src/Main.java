@@ -5,8 +5,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        CountElementsWithMaxFreq countElements = new CountElementsWithMaxFreq();
-        countElements.solution();
+        PutMarbles marbles = new PutMarbles();
+        marbles.solution();
+
+
+//        CountElementsWithMaxFreq countElements = new CountElementsWithMaxFreq();
+//        countElements.solution();
 
 
 //        MaxsumCircularSubArray maxsumCircularSubArray = new MaxsumCircularSubArray();

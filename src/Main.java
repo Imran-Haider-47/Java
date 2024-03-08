@@ -5,8 +5,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        MaxsumCircularSubArray maxsumCircularSubArray = new MaxsumCircularSubArray();
-        maxsumCircularSubArray.solution();
+        CountElementsWithMaxFreq countElements = new CountElementsWithMaxFreq();
+        countElements.solution();
+
+
+//        MaxsumCircularSubArray maxsumCircularSubArray = new MaxsumCircularSubArray();
+//        maxsumCircularSubArray.solution();
 
 //        LListCycle llistcycle = new LListCycle();
 //        llistcycle.solution();

@@ -5,8 +5,17 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PutMarbles marbles = new PutMarbles();
-        marbles.solution();
+
+        CountNegative count = new CountNegative();
+        count.solution();
+
+
+//        Intersection_of_Two_Arrays intersection = new Intersection_of_Two_Arrays();
+//        intersection.optimized();
+
+
+//        PutMarbles marbles = new PutMarbles();
+//        marbles.solution();
 
 
 //        CountElementsWithMaxFreq countElements = new CountElementsWithMaxFreq();

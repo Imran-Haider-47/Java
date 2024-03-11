@@ -5,9 +5,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        CustomSortString customSorting = new CustomSortString();
+        customSorting.solution();
 
-        CountNegative count = new CountNegative();
-        count.solution();
+
+//        CountNegative count = new CountNegative();
+//        count.solution();
 
 
 //        Intersection_of_Two_Arrays intersection = new Intersection_of_Two_Arrays();

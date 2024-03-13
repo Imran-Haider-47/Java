@@ -5,8 +5,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PivotInteger pivot = new PivotInteger();
-        pivot.solution();
+        BinarySubarraySum binary = new BinarySubarraySum();
+        binary.solution();
+
+//        PivotInteger pivot = new PivotInteger();
+//        pivot.solution();
         //        CustomSortString customSorting = new CustomSortString();
 //        customSorting.solution();
 //

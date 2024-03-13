@@ -5,9 +5,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        CustomSortString customSorting = new CustomSortString();
-        customSorting.solution();
-
+        PivotInteger pivot = new PivotInteger();
+        pivot.solution();
+        //        CustomSortString customSorting = new CustomSortString();
+//        customSorting.solution();
+//
 
 //        CountNegative count = new CountNegative();
 //        count.solution();

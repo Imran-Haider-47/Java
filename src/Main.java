@@ -5,8 +5,11 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        BinarySubarraySum binary = new BinarySubarraySum();
-        binary.solution();
+        MergeInterval merge = new MergeInterval();
+        merge.solution();
+
+        //        BinarySubarraySum binary = new BinarySubarraySum();
+//        binary.solution();
 
 //        PivotInteger pivot = new PivotInteger();
 //        pivot.solution();

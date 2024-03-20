@@ -5,8 +5,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        MergeInterval merge = new MergeInterval();
+
+        MergeInBetweenLList merge = new MergeInBetweenLList();
+
         merge.solution();
+
+//        MergeInterval merge = new MergeInterval();
+//        merge.solution();
 
         //        BinarySubarraySum binary = new BinarySubarraySum();
 //        binary.solution();

@@ -5,10 +5,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        ReverseLinkedList reverse = new ReverseLinkedList();
+        reverse.solution();
 
-        MergeInBetweenLList merge = new MergeInBetweenLList();
-
-        merge.solution();
+//        MergeInBetweenLList merge = new MergeInBetweenLList();
+//
+//        merge.solution();
 
 //        MergeInterval merge = new MergeInterval();
 //        merge.solution();
